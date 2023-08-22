@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0; user-scalable=0;">
+    <title>Assignment Rishi - Vymo</title>
+    <meta name="description" content="Assignment Rishi - Vymo">
+    <meta name="author" content="Rishi Ramesh">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Poppins:wght@100;200;300;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+        integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+</head>
+
+<body>
+    <nav class="masthead"><img src="assets/img/brand_logo.png" alt="Company Logo">
+        <form class="searchBarNav"><input type="text" placeholder="Search for anything" name="search"></form>
+        <container class="menuToggle" id="mobileMenu"><span class="bar"></span><span class="bar"></span><span
+                class="bar"></span></container>
+        <ul class="nav">
+            <li class="navItem"><a href="#">Random</a></li>
+            <li class="navItem"><a href="#">Random</a></li>
+            <li class="loginCTA">Login</li>
+        </ul>
+    </nav>
+    <section class="ellipseBG"><img src="assets/img/ellipse.png" alt="Ellipse Background"></section>
+    <section class="starBG"><img src="assets/img/star.png" alt="Star Background"></section>
+    <section class="topSection">
+        <article>
+            <h1 class="mainTitle">This is a <span>sample </span></h1>
+            <h3 class="subTitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        </article>
+        <form class="searchBar"><input type="Email" placeholder="Enter email ID" name="email"><button
+                class="searchButton" type="submit">Register Now</button></form>
+        <container class="logoContainer"><img src="assets/img/google_logo.png" alt="Google Logo"><img
+                src="assets/img/disney_logo.png" alt="Disney Logo"><img src="assets/img/microsoft_logo.png"
+                alt="Microsoft Logo"><img src="assets/img/sony_logo.png" alt="Sony Logo"></container>
+    </section>
+    <section class="bottomSection">
+        <section class="bottomBG"></section>
+        <container class="personContainerOne"><img src="assets/img/Girl.png" alt="Designer Description">
+            <article class="personOneCaption"><span class="topCaption">Good design </span><span
+                    class="middleCaption">goes to </span><span class="bottomCaption">heaven</span>
+                <container class="triangleContainer">
+                    <figure class="greenTriangle"></figure>
+                    <figure class="greenTriangle"></figure>
+                    <figure class="greenTriangle"></figure>
+                </container>
+            </article>
+        </container>
+        <container class="personContainerTwo"><img src="assets/img/Man.png" alt="Designer Description">
+            <article class="personTwoCaption"><span>Its not a bug, its a feature </span></article>
+        </container>
+    </section>
+</body>
+<script>
+    $('.menuToggle').click(function () {
+        $(".nav").toggleClass("mobileNav");
+        $(this).toggleClass("is-active");
+        if ($(this).hasClass("is-active")) $('body').css('overflow', 'hidden');
+        else $('body').css('overflow', 'scroll')
+    });
+</script>
+
+</html>
